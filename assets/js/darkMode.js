@@ -3,6 +3,7 @@
 // I'm using cookies so that the dark/light preference persists across pages
 
 let darkToggle = document.querySelector(".dark-mode-toggle");
+let loading = document.querySelector(".loading");
 
 darkToggle.addEventListener("click", () =>{
     if (document.cookie != "dark=true"){
@@ -21,6 +22,13 @@ let checkDark = () => {
     }else{
         document.body.classList.remove("dark");
     }
+    
 }
 
 checkDark();
+
+window.onload = () => {
+    if (!loading.classList.contains("hidden")){
+        loading.classList.add("hidden");
+    }
+}
