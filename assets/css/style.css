@@ -232,7 +232,8 @@ body.dark article p{
 }
 
 body.dark input, body.dark textarea{
-    background: #777;
+    background: #444;
+    color: #FFF;
 }
 body.dark input::placeholder, body.dark label{
     color: #CCC;
