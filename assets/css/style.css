@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+}
+body{
+    margin: 0;
+    background: url("../images/interlaced.png");
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    display: block;
+    transition: transform .3s ease;
+}
+.logo, h1, figcaption{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+header{
+    display: flex;
+    background: #FFF;
+    border-bottom: 2px solid #CCC;
+    justify-content: center;
+}
+.header-cont{
+    display: flex;
+    flex-basis: 960px;
+    align-items: center;
+
+}
+
+header .logo{
+    background: #4aaaa5;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #FFF;
+}
+nav ul li{
+    display: inline-block;
+    font-size: .9rem;
+    border-right: 1px solid #CCC;
+    padding: 0px 10px;
+    line-height: .9;
+    
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+    color: #4aaaa5;
+}
+nav ul li:last-of-type{
+    border:none;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    
+
+    
+}
+
+article{
+    background: #FFF;
+    width: 100%;
+    max-width: 960px;
+    margin: 0px auto;
+    border: 1px solid #CCC;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+
+article h1{
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+article img{
+    width: 200px;
+    float: left;
+    padding: 10px;
+    
+}
+
+article p{
+    line-height: 2;
+    font-size: .9rem;
+}
+
+
+
+footer{
+    background: #666;
+    margin-top: auto;
+    padding: 5px;
+    border-top: 5px solid #4aaaa5;
+    
+}
+
+footer small{
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #CCC;
+    font-size: .7rem;
+}
+
+/* Contact page stuff */
+
+label{
+    display: block;
+    margin-top: 20px;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #CCC;
+    margin-top: 3px;
+    
+}
+textarea{
+    height: 200px;
+    
+}
+
+button{
+    margin: 10px 0;
+    padding: 10px 25px;
+    background: #4aaaa5;
+    color: #FFF;
+    border: none;
+}
+
+
+/* Portfolio stuff */
+
+.port-cont{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+figure{
+    height: 250px;
+    width: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+figcaption{
+    display: block;
+    text-align: center;
+    background: #4aaaa5;
+    color: #FFF;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 5px;
+
+}
