@@ -9,3 +9,5 @@
 - For the portfolio page, I just set the images to pull dynamically from the lorempixel API. I figured that between the "About" picture and the background pattern, I'd shown competence in putting image files in a folder.
 
 - Extra Bonus: Added a dark mode toggle button
+
+- Extra Extra Bonus: added loader screen
