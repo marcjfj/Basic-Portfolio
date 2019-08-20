@@ -19,6 +19,7 @@ darkToggle.addEventListener("click", () =>{
 let checkDark = () => {
     if (document.cookie == "dark=true"){
         document.body.classList.add("dark");
+        darkToggle.textContent = "Light Mode";
     }else{
         document.body.classList.remove("dark");
     }
