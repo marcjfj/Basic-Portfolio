@@ -26,6 +26,11 @@ let checkDark = () => {
     
 }
 
+let delay = (url) => {
+    loading.classList.remove("hidden");
+    setTimeout(() => {window.location = url}, 300);
+}
+
 checkDark();
 
 window.onload = () => {

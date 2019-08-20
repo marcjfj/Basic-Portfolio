@@ -124,17 +124,17 @@ footer small{
     align-items: center;
     justify-content: center;
     transform-origin: 0% 50%;
-    transition: transform .5s ease, opacity 1s ease;
+    transition: transform .3s ease;
 }
 .loading div{
     color: #FFF;
     font-size: 2rem;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    animation: 2s ease infinite spin;
+    animation: .3s ease infinite alternate-reverse spin;
 }
 @keyframes spin{
-    from{transform: rotateZ(0deg);}
-    to{transform: rotateZ(360deg);}
+    from{transform: scale(1);}
+    to{transform: scale(5);}
 }
 .hidden{
     
