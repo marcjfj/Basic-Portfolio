@@ -5,7 +5,7 @@
 }
 body{
     margin: 0;
-    background: url("../images/interlaced.png");
+    background: url("../images/dynamic-style.png");
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -169,4 +169,40 @@ figcaption{
     margin-top: auto;
     margin-bottom: 5px;
 
+}
+
+/* Dark Mode */
+
+.dark-mode-toggle{
+    position: fixed;
+    bottom: 75px;
+    right: 0px;
+}
+body.dark{
+    background-image: url("../images/dynamic-dark.png");
+}
+body.dark header{
+    background: #222;
+}
+
+body.dark nav a{
+    color: #FFF;
+}
+
+body.dark article{
+    background: #222;
+}
+
+body.dark article p{
+    color: #CCC;
+}
+
+body.dark input, body.dark textarea{
+    background: #777;
+}
+body.dark input::placeholder, body.dark label{
+    color: #CCC;
+}
+body.dark footer{
+    background: #222;
 }
