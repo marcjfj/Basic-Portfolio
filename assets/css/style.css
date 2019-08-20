@@ -188,6 +188,10 @@ figure{
     margin: 0px;
     margin-right: 20px;
     margin-top: 30px;
+    transition: transform .2s;
+}
+figure:hover{
+    transform: translateY(-10px) scale(1.05);
 }
 figcaption{
     display: block;
