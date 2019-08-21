@@ -53,7 +53,7 @@ nav ul li{
 }
 nav ul li a:hover{
     transform: scale(1.1);
-    color: #4aaaa5;
+    
 }
 nav ul li:last-of-type{
     border:none;
@@ -204,6 +204,40 @@ figcaption{
 
 }
 
+
+
+
+/* Theme stuff */
+
+.theme-toggle{
+    position: fixed;
+    bottom: 125px;
+    right: 0px;
+    background: #FFF;
+    color: #777;
+    border: 2px solid #CCC;
+    border-right: none;
+    padding: 10px 20px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.theme-toggle button{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    padding: 0px;
+    margin: 5px;
+    transition: all .2s;
+}
+.theme-toggle button:hover{
+    transform: scale(1.2);
+}
+
 /* Dark Mode */
 
 .dark-mode-toggle{
@@ -240,4 +274,9 @@ body.dark input::placeholder, body.dark label{
 }
 body.dark footer{
     background: #222;
+}
+
+body.dark .theme-toggle{
+    background: #444;
+    color: #FFF;
 }

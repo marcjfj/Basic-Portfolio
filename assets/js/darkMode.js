@@ -1,11 +1,7 @@
-// adds a "dark" class to the body
-// in style.css I've added a set of rules for when .dark is applied
-// I'm using cookies so that the dark/light preference persists across pages
-
 let darkToggle = document.querySelector(".dark-mode-toggle");
 
 darkToggle.addEventListener("click", () =>{
-    if (document.cookie != "dark=true"){
+    if (!getCookie("dark")){
         document.cookie = "dark=true; path=/";
         darkToggle.textContent = "Light Mode";
     }else{
@@ -16,7 +12,7 @@ darkToggle.addEventListener("click", () =>{
 });
 
 let checkDark = () => {
-    if (document.cookie == "dark=true"){
+    if (getCookie("dark")){
         document.body.classList.add("dark");
         darkToggle.textContent = "Light Mode";
     }else{
@@ -26,3 +22,20 @@ let checkDark = () => {
 }
 checkDark();
 
+//Disclaimer - stole this function from W3Schools///////////////////////////////
+function getCookie(cname) {                                                 ///
+    var name = cname + "=";                                                //
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";                                                              //
+}                                                                          /////
+///////////////////////////////////////////////////////////////////////////////
