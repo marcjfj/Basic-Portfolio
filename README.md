@@ -11,3 +11,5 @@
 - Extra Bonus: Added a dark mode toggle button
 
 - Extra Extra Bonus: added loader screen
+
+- Extra Extra Extra Bonus: added color theme picker

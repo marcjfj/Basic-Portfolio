@@ -22,6 +22,11 @@ let checkDark = () => {
 }
 checkDark();
 
+
+
+
+
+
 //Disclaimer - stole this function from W3Schools///////////////////////////////
 function getCookie(cname) {                                                 ///
     var name = cname + "=";                                                //
