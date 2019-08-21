@@ -1,4 +1,4 @@
-let colors = ["#4aaaa5", "#f06d06", "#eb3d34", "#dd30e3", "#3492eb", "#222"];
+let colors = ["#4aaaa5", "#f06d06", "#eb3d34", "#dd30e3", "#3492eb", "#777"];
 let themeBtn = document.querySelector(".theme-toggle");
 let expanded = false;
 themeBtn.addEventListener("click", () =>{
