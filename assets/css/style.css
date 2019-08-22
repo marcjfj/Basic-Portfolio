@@ -354,12 +354,12 @@ body.twenty-nineteen .port-cont{
 }
 body.twenty-nineteen figure{
     flex-direction: column;
-    width: calc(100%);
+    width: 100%;
     border-radius: 3px;
-    margin-right: 50px;
     background-position: center;
     box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.445), 0px 2px 10px -5px rgba(0, 0, 0, 0.24);
     position: relative;
+    overflow: hidden;
 }
 body.twenty-nineteen figcaption{
     margin-bottom:0px;
@@ -367,13 +367,16 @@ body.twenty-nineteen figcaption{
     right: 0px;
     top: 50%;
     padding: 50px 20px;
+    padding-right: 150px;
     box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.301);
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(50px);
     border-radius: 3px 0px 0px 3px;
     max-width: 100px;
     text-align: left;
 }
-
+body.twenty-nineteen figure:hover figcaption{
+    transform: translateY(-50%) translateX(0px);
+}
 
 
 body.twenty-nineteen article img{
