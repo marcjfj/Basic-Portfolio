@@ -1,4 +1,6 @@
-#Basic-Portfolio
+# Basic-Portfolio
+## [Live Demo Here](https://marcjfj.github.io/Basic-Portfolio/)
+
 
 - Made the layout reasonably close to the prompt
 
@@ -11,3 +13,5 @@
 - Extra Extra Bonus: added page transition screen
 
 - Extra Extra Extra Bonus: added color theme picker
+
+- Extra Special Deluxe Bonus: added Modernizer/Oldifier toggle

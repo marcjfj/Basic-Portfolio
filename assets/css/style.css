@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,700&display=swap');
+
 *{
     box-sizing: border-box;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -42,6 +44,9 @@ header .logo{
     align-items: center;
     font-size: 2rem;
     color: #FFF;
+}
+nav ul{
+    padding: 0px;
 }
 nav ul li{
     display: inline-block;
@@ -206,16 +211,15 @@ figcaption{
 
 
 
-
 /* Theme stuff */
 
 .theme-toggle{
     position: fixed;
     bottom: 125px;
     right: 0px;
-    background: #FFF;
+    background: #EEE;
     color: #777;
-    border: 2px solid #CCC;
+    
     border-right: none;
     padding: 10px 20px;
     font-size: .8rem;
@@ -224,6 +228,7 @@ figcaption{
     justify-content: space-between;
     -webkit-user-select: none;
     -moz-user-select: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.253);
 }
 
 .theme-toggle button{
@@ -244,6 +249,7 @@ figcaption{
     position: fixed;
     bottom: 75px;
     right: 0px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.253);
 }
 body.dark{
     background-image: url("../images/dynamic-dark.png");
@@ -277,6 +283,161 @@ body.dark footer{
 }
 
 body.dark .theme-toggle{
+    background: #444;
+    color: #FFF;
+}
+
+/* dated stuff */
+
+.date-toggle{
+    
+    position: fixed;
+    bottom: 45px;
+    right: 0px;
+    background: #EEE;
+    color: #777;
+    border-right: none;
+    padding: 10px 20px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.253);
+    
+}
+body.twenty-nineteen *{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+body.twenty-nineteen{
+    background: rgb(238, 236, 236);
+    box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, 0.158);
+}
+
+body.twenty-nineteen header{
+    border: none;
+    background: none;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+body.twenty-nineteen .logo{
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.24);
+
+}
+body.twenty-nineteen nav ul li{
+    border: none;
+
+}
+
+body.twenty-nineteen h1{
+    border: none;
+    margin: 50px 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+body.twenty-nineteen article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    /* box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.24); */
+    padding-bottom: 50px;
+    background: none;
+}
+body.twenty-nineteen p{
+    flex-basis: 100%;
+    max-width: 800px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    
+}
+
+body.twenty-nineteen input, body.twenty-nineteen textarea{
+    border-width: 0px 0px 2px 0px;
+    background: rgb(245, 245, 245);
+}
+
+body.twenty-nineteen form{
+    width: 100%;
+    max-width: 500px;
+    
+    
+}
+body.twenty-nineteen footer{
+    border:none;
+    background: #DDD;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.24);
+    
+    
+}
+body.twenty-nineteen small{
+    color: #999;
+    
+    
+}
+body.twenty-nineteen .port-cont{
+    flex-direction: column;
+    width: 100%;
+}
+body.twenty-nineteen figure{
+    flex-direction: column;
+    width: calc(100% - 50px);
+    transform: translateX(-50px);
+    border-radius: 3px;
+    margin-right: 50px;
+    background-position: center;
+    box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.445), 0px 2px 10px -5px rgba(0, 0, 0, 0.24);
+
+}
+body.twenty-nineteen figcaption{
+    margin-bottom:0px;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    padding: 50px 20px;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.301);
+    transform: translateY(-50%);
+    border-radius: 3px;
+}
+
+
+
+body.twenty-nineteen article img{
+    border-radius: 100%;
+    box-shadow: inset 0px 2px 20px -10px rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+
+}
+
+
+/* Dark Override  */
+
+body.dark{
+    background-color: rgb(46, 45, 45);
+}
+
+body.dark footer{
+    background: #222;
+}
+
+body.dark input, body.dark textarea{
+    background: #444;
+    color: #FFF;
+}
+body.dark .date-toggle{
     background: #444;
     color: #FFF;
 }
