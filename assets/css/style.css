@@ -407,7 +407,7 @@ body.twenty-nineteen article img{
 
 .toggle{
     transition: all .2s ease;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.281);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.212);
     border-radius: 25px;
     padding: 5px 10px;
     text-align: center;
@@ -421,6 +421,10 @@ body.twenty-nineteen article img{
     user-select: none;
     
     
+}
+
+.theme-toggle{
+    background: #FFF;
 }
 .toggle:hover{
     transform: translateX(-5px);
