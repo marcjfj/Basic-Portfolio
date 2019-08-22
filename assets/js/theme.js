@@ -3,11 +3,12 @@ let themeBtn = document.querySelector(".theme-toggle");
 let expanded = false;
 themeBtn.addEventListener("click", () =>{
     if (!expanded){
+        themeBtn.innerHTML = "";
         colors.forEach(color => {
 
             let colorBtn = document.createElement("button");
             colorBtn.style.background = color;
-            themeBtn.appendChild(colorBtn);
+            themeBtn.prepend(colorBtn);
 
             colorBtn.addEventListener("click", () => {
                 document.cookie = `theme=${color}; path=/`;
