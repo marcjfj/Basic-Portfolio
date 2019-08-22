@@ -243,6 +243,7 @@ figcaption{
     transform: scale(1.2);
 }
 
+
 /* Dark Mode */
 
 .dark-mode-toggle{
@@ -292,10 +293,9 @@ body.dark .theme-toggle{
 .date-toggle{
     
     position: fixed;
-    bottom: 45px;
+    bottom: 35px;
     right: 0px;
-    background: #EEE;
-    color: #777;
+    
     border-right: none;
     padding: 10px 20px;
     font-size: .8rem;
@@ -440,4 +440,10 @@ body.dark input, body.dark textarea{
 body.dark .date-toggle{
     background: #444;
     color: #FFF;
+}
+.toggle{
+    transition: all .2s ease;
+}
+.toggle:hover{
+    transform: translateX(-5px);
 }
