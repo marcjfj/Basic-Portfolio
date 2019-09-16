@@ -74,7 +74,7 @@ main{
 
 article{
     background: #FFF;
-    width: 100%;
+    width: calc(100% - 35px);
     max-width: 960px;
     margin: 0px auto;
     border: 1px solid #DDD;
@@ -135,9 +135,9 @@ footer small{
     color: #FFF;
     font-size: 2rem;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    animation: .3s ease infinite alternate-reverse spin;
+    animation: .3s ease infinite alternate-reverse bounce;
 }
-@keyframes spin{
+@keyframes bounce{
     from{transform: scale(1);}
     to{transform: scale(5);}
 }
@@ -460,4 +460,14 @@ body.dark .controls{
 }
 body.dark .theme-toggle{
     background:#666;
+}
+
+
+@media all and (max-width: 700px){
+    .header-cont{flex-wrap: wrap;}
+    header .logo{flex-basis: 100%; justify-content: center;}
+    nav{margin: 0 auto;}
+    nav ul li{border: none;}
+    article img{width: 100%; margin-bottom: 20px;}
+    figure{width: 100%; margin: 10px 0px;}
 }
