@@ -188,6 +188,7 @@ figure{
     height: 250px;
     width: 300px;
     background-size: cover;
+    
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -356,7 +357,7 @@ body.twenty-nineteen figure{
     flex-direction: column;
     width: 100%;
     border-radius: 3px;
-    background-position: center;
+    background-position: center 10%;
     box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.445), 0px 2px 10px -5px rgba(0, 0, 0, 0.24);
     position: relative;
     overflow: hidden;
